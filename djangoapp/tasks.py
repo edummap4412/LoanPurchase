@@ -3,14 +3,13 @@ from celery import shared_task
 from django.db import transaction
 from .models import ProfileClient
 
-
 logger = logging.getLogger(__name__)
 
 
 @shared_task
 def process_loans():
-    try:
-        profile_clients = ProfileClient.objects.filter(status=0)
+    profile_clients = ProfileClient.objects.filter(status=0)
+    if profile_clients:
         for profile_client in profile_clients:
             loan_value = profile_client.loan_value
 
@@ -28,5 +27,4 @@ def process_loans():
 
         return "Loans processed successfully"
 
-    except ProfileClient.DoesNotExist:
-        return "No ProfileClients found"
+    return "There is no pending loan application"

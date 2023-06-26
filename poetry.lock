@@ -253,6 +253,17 @@ files = [
 wcwidth = "*"
 
 [[package]]
+name = "pycpfcnpj"
+version = "1.7.0"
+description = "Python module for brazilian register numbers for persons (CPF) and companies (CNPJ)."
+optional = false
+python-versions = "*"
+files = [
+    {file = "pycpfcnpj-1.7.0-py3-none-any.whl", hash = "sha256:28cff52153956062cb931747e56cdf2881fa86635bad64383a398da6836d4719"},
+    {file = "pycpfcnpj-1.7.0.tar.gz", hash = "sha256:00ffceb1ed57234b4bcc081523140f604cd7929256d43913dbb413c263bee558"},
+]
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
@@ -351,4 +362,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "5352635808d333e835736b9079967dd0ffb21578ae91503b7acd042880d3fd49"
+content-hash = "45969ba45b339d5b5c5a6b4879306b9e4dd606a325130e6b9185f0855ec704cd"
