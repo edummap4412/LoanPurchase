@@ -11,7 +11,8 @@ no qual os usuários fornecem informações pessoais para a análise e possível
     $ docker-compose up
   ```
   * Para iniciar o servidor local do app ```python manage.py runserver```
-  
+  * Paara acessar o admin " ```url: http://127.0.0.1:8000/admin , username : admin , password : admin```
+
     Observação: Foi configurada uma fila para a execução de uma rotina que processará os dados dos clientes e suas respectivas propostas. Essa rotina realizará uma análise dos dados com base em critérios predefinidos, determinando se a proposta de empréstimo será aprovada ou não. O uso de uma fila permite que o processamento ocorra de forma assíncrona e agendada, garantindo a eficiência e escalabilidade do sistema.
 ---
 
