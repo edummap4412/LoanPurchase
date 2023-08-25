@@ -34,8 +34,8 @@ class ProfileClientService(object):
                     number=self.number
                 )
 
-                return profile_client
         except DatabaseError as e:
             logging.error(e)
         except Exception as e:
             logging.error(e)
+            raise ValueError("Não foi possivel criar o usuario")
