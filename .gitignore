@@ -144,6 +144,9 @@ venv.bak/
 .spyderproject
 .spyproject
 
+# envoirement variables
+.env.dev
+
 # Rope project settings
 .ropeproject
 

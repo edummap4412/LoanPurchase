@@ -137,6 +137,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CELERY_BEAT_SCHEDULE = {
     'process_loans_task': {
         'task': 'djangoapp.tasks.process_loans',
-        'schedule': 30,  # Executa a cada 30 segundos (120 segundos)
+        'schedule': 30,  # Executa a cada 30 segundos
     },
 }
